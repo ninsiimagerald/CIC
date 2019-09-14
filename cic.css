@@ -14,6 +14,8 @@ a{
 #topMenu{
     position: fixed;
     right: 0;
+    background: rgba(0, 0, 128, 0.5);
+    border-radius: 10px;
 }
 #topMenu ul li{
     display: inline;
@@ -23,6 +25,7 @@ a{
     text-decoration: none;
     margin: 10px;
     color: rgb(139,0,0);
+    
 }
 #topMenu ul li a:hover{
     background: #008;
@@ -34,9 +37,43 @@ a{
 }
 
 #heading h3{
-    background: #008;
     color: #fff;
-    line-height: 40px;
+}
+marquee{
+    background: rgba(0, 0, 128, 0.75);
+    height: 50px;
+}
+.increaseImg{
+    background: url("images/bg.jpg");
+    height: 600px;
+    background-size: cover;
 }
 
+.weDoInvest, .weDoSave, .weDoTogether{
+    height: 250px;
+    width: 30%;
+    
+    float: left;
+    margin: 1.5%;
+}
+.weDoInvest{
+    background: url("images/invest.jpg");
+    background-size: cover;
 
+}
+.weDoSave{
+    background: url("images/save.jpg");
+    background-size: cover;
+}
+.weDoTogether{
+    background: url("images/support.jpg");
+    background-size: cover;
+}
+
+.whatWeDo p{
+    height: 50px;
+    color: #fff;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
+    position: relative;
+    margin-bottom: 20px;
+}
