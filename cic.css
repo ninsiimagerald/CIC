@@ -130,25 +130,28 @@ marquee {
 
 @keyframes login {
     50% {
-        background: #3838e2;
-        padding: 10px;
-        border-radius: 8px;
+       /* /* background: #3838e2;
+        padding: 10px; 
+        border-radius: 8px; */
+        font-size: 10px;
     }
 }
 
 @-webkit-keyframes login {
     50% {
-        background: #3838e2;
-        padding: 10px;
-        border-radius: 8px;
+       /* /* background: #3838e2;
+        padding: 10px; 
+        border-radius: 8px; */
+        font-size: 10px;
     }
 }
 
 @-moz-keyframes login {
     50% {
-        background: #3838e2;
-        padding: 10px;
-        border-radius: 8px;
+        /* /* background: #3838e2;
+        padding: 10px; 
+        border-radius: 8px; */
+        font-size: 10px;
     }
 }
 
@@ -158,7 +161,7 @@ marquee {
     -moz-animation: login 1s infinite;
 }
 
-input {
+input, #gender {
     margin: 10px;
     padding: 10px;
     border-left: solid #3838e2 1px;
@@ -194,7 +197,7 @@ fieldset {
     color: #fff;
     background: #008;
 }
-input:focus{
+input:focus, #gender:focus, input:hover, #gender:hover{
     background: #fff;
 }
 #loginBtn{
@@ -204,4 +207,44 @@ input:focus{
     position: relative;
     top: 50px;
     margin-bottom: 100px;
+}
+
+@media screen and (max-width: 600px){
+    .headingText h1 {
+        font-family: 'Quicksand', sans-serif;
+        /* padding: 0 6px;
+        margin: 4px; */
+        font-size: 36px;
+        font-weight: bolder;
+    }
+    #topMenu {
+        position: relative;
+        left: 0;
+        border-radius: 10px;
+    }
+    .whatWeDo {
+        height: 250px;
+        /* width: 90%; */
+    
+        /* display: block; */
+        margin: 0 auto;
+    }
+    .weDoInvest, .weDoSave, .weDoTogether{
+        /* display: block; */
+        width: 90%;
+    }
+    .weDoInvest{
+        border-radius: 50px 50px 0 0;
+        background: url("images/invest.jpg");
+    background-size: cover;
+    }
+    .weDoInvest p{
+        border-radius: 0;
+    }
+    .weDoTogether{
+        border-radius: 0 0 50px 50px;
+    }
+    .weDoTogether p{
+        border-radius: 0 0 42px 42px;
+    }
 }
