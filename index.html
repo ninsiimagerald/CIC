@@ -11,7 +11,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Quicksand:300,500|Karla:400i|Montserrat:600|Open+Sans|Roboto|Shadows+Into+Light|Rubik&display=swap">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="cic.js"></script>
+    
 
 </head>
 
@@ -20,78 +20,37 @@
     <nav id="topMenu">
         <ul>
             <li><a href="#loginForm">Home</a></li>
-            <li><a href="" class="loginBlink">Login</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <!-- <li><a href="" class="loginBlink">Login</a></li> -->
+            <li><a href="#about">About</a></li>
+            <li><a href="mailto:citizensinvestmentclub@gmail.com?subject=QUERY FROM WEBSITE">Contact</a></li>
         </ul>
     </nav>
     <div class="heading">
         <img src="images/cic_logo_transparent.png" alt="CIC logo">
         <div class="headingText">
-            <h1>Citizen's Investment Club</h1>
+            <h1>Citizens' Investment Club</h1>
         </div>
         <marquee behavior="scroll" direction="left">
-            <h3>We aim at financial stability, as we build for our future. We look forward to sustaining generations.
-                Working together is our goal. </h3>
+            <h3>Working Together, Truthfulness, Investment, Charity, Education, & Accountability.</h3>
         </marquee>
-
     </div>
-    <div class="access">
-        <div id="loginForm">
-            <h2>Login or <a href="#registerForm"><button id="registerBtn">Register</button></a></h2>
-            <form action="" method="post">
-                <fieldset>
-                    <!-- <legend></legend> -->
-                        <label for="username">username:</label> <input type="text" name="username" required>
-                        <label for="password">Password: </label> <input type="password" name="password" required>
-                        <input type="submit" value="Login" id="loginBtn">
-                   
-                </fieldset>
-            </form>
-        </div>
-        <div id="registerForm">
-            <h2>Register</h2>
-            <form action="" method="get">
-                <fieldset>
-                    <!-- <legend>Personal details</legend> -->
-                    <label for="firstName">First Name: </label> <input type="text" name="firstName" required>
-                    <label for="lastName">Last Name:</label> <input type="text" name="lastName" required>
-                    <label for="username">Choose username:</label> <input type="text" name="username" required><br>
-                    <label for="gender">Gender:</label>
-                    <select name="gender" id="gender" required>
-                        <option value="select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="otherGender">Other</option>
-                    </select>
-                    <label for="birthday">Birthday: </label>
-                    <input type="date" name="birthday" required> <br>
-                    <label for="IDnumber">NIN: </label><input type="number" name="IDnumber">
-                    <label for="uploadID">Upload ID: </label><input type="file" name="IDphoto">
-
-                </fieldset>
-
-                <fieldset>
-                    <!-- <legend>Contact</legend> -->
-                    <label for="phone">Telephone</label><input type="tel" name="phone"
-                        pattern="[0-9]{3} [0-9]{3} [0-9]{6}" placeholder="256 787 394119" required>
-                    <label for="email">Email</label><input type="email" name="email" required
-                        placeholder="Enter your email"><br>
-                    <label for="Address">address: </label><input type="text" name="primaryAddress"
-                        placeholder="Primary address">
-                    <input type="text" name="otherAddress" placeholder="Other address(optional)"><br>
-                    <label for="nokName">Next of Kin</label><input type="text" name="nokName">
-                    <label for="nokPhone">Telephone</label><input type="tel" name="phone"
-                        pattern="[0-9]{3} [0-9]{3} [0-9]{6}" placeholder="256 787 394119"><br>
-
-                </fieldset>
-
-                <input type="checkbox" checked>Clicking the button below confirms that you have read and agreed the <a
-                    href="#terms">Terms and conditions </a>for Citizens' Investment Club. <br>
-                <input type="submit" name="submitForm" value="Register Now" id="regBtn">
-            </form>
-
-        </div>
+    <div id="about">
+       <h2>About CIC</h2>
+       <p style="text-align: justify">Citizens' Investment Club was started in October 2019 by a group of members from the class 2012 of Citizens' Secondary School. The founding members came up with the idea after realizing that coming together means growing together, thus a catchphrase "Coming together, as we grow together". The club is open for people of all age groups and professions as long as the interested party is a citizen of Uganda. CIC is registered and regulated by the Investment Act in the Constitution of Uganda. 
+          <h4>Our core values are:</h4> 
+           <ul style="text-align: left">
+               <li>Working Together</li>
+               <li>Truthfulness</li>
+               <li>Investment</li>
+               <li>Charity</li>
+               <li>Education</li>
+               <li>Accountability</li>
+           </ul>
+           <h3>Vision</h3>
+           <p style="text-align: justify">To have a financial institution that will set the pace in banking and investment.</p>
+           <h3>Mission</h3>
+           <p style="text-align: justify">Working together as one people in pulling big investment vehicles and doing charitable work to improve the livelihoods of vulnerable citizens.</p>
+       </p>
     </div>
     <div class="whatWeDo">
         <div class="weDoInvest">
@@ -99,7 +58,7 @@
         </div>
         <div class="weDoSave">
 
-            <p id="savePara">A journey of a thousand steps starts today. Invest for a secure tomorrow.</p>
+            <p id="savePara">A journey of a thousand steps starts with one. Invest for a secure tomorrow.</p>
         </div>
         <div class="weDoTogether">
             <p id="togetherPara">In all times: Joy or sorrow, we support each other</p>
@@ -107,20 +66,21 @@
     </div>
     <footer class="footer">
         <div class="copyright">
-            <p class="copySymbYear">&copy;<p id="copYear"></p>
-            </p>
-        </div>
+            
+           
+        
         <div class="terms">
             <ul>
+                <li>&copy;2019</li>
                 <li><a href="">Privacy</a></li>
                 <li><a href="">Terms</a></li>
-                <li><a href="mailto:ninsiimagerald@gmail.com" id="contact">Email</a></li>
-                <li><a href="tel:+256787394119">Call us</a></li>
+                <li><a href="mailto:citizensinvestmentclub@gmail.com?subject=QUERY FROM WEBSITE" id="contact">Email</a></li>
+               
             </ul>
-        </div>
+      
     </footer>
 
-
+    <script src="cic.js"></script>
 </body>
 
 </html>

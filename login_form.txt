@@ -1,0 +1,57 @@
+<div class="access">
+        <div id="loginForm">
+            <h2>Login or <a href="#registerForm"><button id="registerBtn">Register</button></a></h2>
+            <form action="" method="post">
+                <fieldset>
+                    <!-- <legend></legend> -->
+                        <label for="username">username:</label> <input type="text" name="username" required>
+                        <label for="password">Password: </label> <input type="password" name="password" required>
+                        <input type="submit" value="Login" id="loginBtn">
+                   
+                </fieldset>
+            </form>
+        </div>
+        <div id="registerForm">
+            <h2>Register</h2>
+            <form action="" method="get">
+                <fieldset>
+                    <!-- <legend>Personal details</legend> -->
+                    <label for="firstName">First Name: </label> <input type="text" name="firstName" required>
+                    <label for="lastName">Last Name:</label> <input type="text" name="lastName" required>
+                    <label for="username">Choose username:</label> <input type="text" name="username" required><br>
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender" required>
+                        <option value="select">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="otherGender">Other</option>
+                    </select>
+                    <label for="birthday">Birthday: </label>
+                    <input type="date" name="birthday" required> <br>
+                    <label for="IDnumber">NIN: </label><input type="number" name="IDnumber">
+                    <label for="uploadID">Upload ID: </label><input type="file" name="IDphoto">
+
+                </fieldset>
+
+                <fieldset>
+                    <!-- <legend>Contact</legend> -->
+                    <label for="phone">Telephone</label><input type="tel" name="phone"
+                        pattern="[0-9]{3} [0-9]{3} [0-9]{6}" placeholder="256 787 394119" required>
+                    <label for="email">Email</label><input type="email" name="email" required
+                        placeholder="Enter your email"><br>
+                    <label for="Address">address: </label><input type="text" name="primaryAddress"
+                        placeholder="Primary address">
+                    <input type="text" name="otherAddress" placeholder="Other address(optional)"><br>
+                    <label for="nokName">Next of Kin</label><input type="text" name="nokName">
+                    <label for="nokPhone">Telephone</label><input type="tel" name="phone"
+                        pattern="[0-9]{3} [0-9]{3} [0-9]{6}" placeholder="256 787 394119"><br>
+
+                </fieldset>
+
+                <input type="checkbox" checked>Clicking the button below confirms that you have read and agreed the <a
+                    href="#terms">Terms and conditions </a>for Citizens' Investment Club. <br>
+                <input type="submit" name="submitForm" value="Register Now" id="regBtn">
+            </form>
+
+        </div>
+    </div>

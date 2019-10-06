@@ -115,7 +115,7 @@ marquee {
 .whatWeDo p {
     height: 50px;
     color: #fff;
-    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 53, 1), rgba(0, 0, 53, 0.4));
     position: relative;
     bottom: -185px;
 }
@@ -247,4 +247,18 @@ input:focus, #gender:focus, input:hover, #gender:hover{
     .weDoTogether p{
         border-radius: 0 0 42px 42px;
     }
+}
+.footer{
+    height: 80px;
+}
+.footer li{
+    list-style: none;
+    float: left;
+}
+.footer a{
+    text-decoration: none;
+    margin: 10px;
+}
+#about h2, h3, h4{
+    color: #8b0000;
 }
